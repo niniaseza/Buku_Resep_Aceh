@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resep Udang Asam Sunti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f5ef;
+            color: #3d352f;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #657153, #89976f);
+            color: white;
+            padding: 45px 40px;
+        }
+
+        .header .label {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: #596448;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e0d5;
+        }
+
+        .ingredients {
+            list-style: none;
+        }
+
+        .ingredients li {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee9df;
+            display: flex;
+            gap: 8px;
+        }
+
+        .ingredients li:last-child {
+            border-bottom: none;
+        }
+
+        .ingredients li::before {
+            content: "•";
+            color: #89976f;
+            font-weight: bold;
+        }
+
+        .ingredients a {
+            color: #657153;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .ingredients a:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            counter-reset: step;
+            list-style: none;
+        }
+
+        .steps li {
+            position: relative;
+            padding: 0 0 25px 60px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee9df;
+        }
+
+        .steps li:last-child {
+            border-bottom: none;
+        }
+
+        .steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: #89976f;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .steps strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #4e5842;
+        }
+
+        .note {
+            margin-top: 30px;
+            padding: 18px 20px;
+            background: #f2f0e8;
+            border-left: 4px solid #89976f;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #625b54;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #f5f2eb;
+            color: #81786f;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 94%;
+                margin: 25px auto;
+            }
+
+            .header {
+                padding: 30px 25px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .info {
+                gap: 8px;
+            }
+
+            .info-box {
+                font-size: 13px;
+                padding: 8px 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="recipe-card">
+
+            <!-- Header -->
+            <header class="header">
+                <div class="label">Resep Masakan</div>
+
+                <h1>Udang Asam Sunti</h1>
+
+                <p>
+                    Udang dengan bumbu cabai hijau dan asam sunti
+                    yang gurih, pedas, dan khas Aceh.
+                </p>
+
+                <div class="info">
+                    <div class="info-box">👥 2–4 orang</div>
+                    <div class="info-box">⏱ 30–50 menit</div>
+                    <div class="info-box">🍤 Masakan Seafood</div>
+                </div>
+            </header>
+
+
+            <!-- Content -->
+            <main class="content">
+
+                <!-- Bahan -->
+                <section>
+                    <h2>Bahan-bahan</h2>
+
+                    <ul class="ingredients">
+                        <li>
+                            <strong>200 gr</strong>
+                            <a href="https://cookpad.com/id/cari/udang" target="_blank">
+                                udang
+                            </a>
+                            yang sudah dicuci bersih
+                        </li>
+
+                        <li>
+                            <strong>10 buah</strong>
+                            <a href="https://cookpad.com/id/cari/cabe%20hijau" target="_blank">
+                                cabe hijau
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>6 buah</strong>
+                            <a href="https://cookpad.com/id/cari/cabe%20rawit" target="_blank">
+                                cabe rawit
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>3 siung</strong>
+                            <a href="https://cookpad.com/id/cari/bawang%20merah" target="_blank">
+                                bawang merah
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>4 siung</strong>
+                            <a href="https://cookpad.com/id/cari/bawang%20putih" target="_blank">
+                                bawang putih
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>Secukupnya</strong> ketumbar bubuk
+                        </li>
+
+                        <li>
+                            <strong>2 cm</strong>
+                            <a href="https://cookpad.com/id/cari/kunyit" target="_blank">
+                                kunyit
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>8 buah</strong>
+                            <a href="https://cookpad.com/id/cari/asam%20sunti" target="_blank">
+                                asam sunti
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>1 cm</strong>
+                            <a href="https://cookpad.com/id/cari/jahe" target="_blank">
+                                jahe
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>3 lembar</strong>
+                            <a href="https://cookpad.com/id/cari/daun%20salam" target="_blank">
+                                daun salam
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>2 cm</strong>
+                            <a href="https://cookpad.com/id/cari/batang%20sereh" target="_blank">
+                                batang sereh
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>Secukupnya</strong> minyak
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!-- Cara Membuat -->
+                <section>
+                    <h2>Cara Membuat</h2>
+
+                    <ol class="steps">
+
+                        <li>
+                            <strong>Haluskan bumbu</strong>
+                            Blender cabe hijau, cabe rawit, bawang merah,
+                            bawang putih, ketumbar, kunyit, dan asam sunti
+                            hingga menjadi bumbu halus.
+                        </li>
+
+                        <li>
+                            <strong>Tumis bumbu</strong>
+                            Iris 2 buah bawang merah, kemudian tumis dengan
+                            sedikit minyak bersama bumbu halus, daun salam,
+                            dan sereh.
+                        </li>
+
+                        <li>
+                            <strong>Masukkan udang</strong>
+                            Masukkan udang ke dalam tumisan. Aduk hingga
+                            semua bahan tercampur rata dan bumbu mulai
+                            meresap. Tambahkan minyak jika dirasa masih kurang.
+                        </li>
+
+                        <li>
+                            <strong>Masak hingga matang</strong>
+                            Masak hingga udang matang dan bumbu meresap
+                            dengan baik. Setelah matang, angkat dan sajikan.
+                        </li>
+
+                    </ol>
+
+                    <div class="note">
+                        <strong>Tips:</strong>
+                        Sesuaikan jumlah cabai dan asam sunti dengan selera.
+                        Masak udang secukupnya agar teksturnya tetap lembut
+                        dan tidak terlalu keras.
+                    </div>
+                </section>
+
+            </main>
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                Resep Udang Asam Sunti • Selamat memasak! 🍤
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
