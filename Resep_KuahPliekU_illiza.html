@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuah Pliek U | Resep Khas Aceh</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f3ec;
+            color: #302b27;
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #355b45, #6f8f62);
+            color: white;
+            padding: 70px 20px 60px;
+            text-align: center;
+        }
+
+        .hero .tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: #eef4eb;
+            font-size: 16px;
+        }
+
+        .container {
+            width: min(1050px, 92%);
+            margin: -35px auto 50px;
+            position: relative;
+        }
+
+        .info {
+            background: white;
+            border-radius: 18px;
+            padding: 22px 30px;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 28px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #355b45;
+            font-size: 20px;
+        }
+
+        .info-item span {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px 34px;
+            margin-bottom: 24px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #355b45;
+            margin-top: 0;
+            font-size: 25px;
+            border-left: 5px solid #d69b45;
+            padding-left: 12px;
+        }
+
+        h3 {
+            color: #4d684f;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .ingredient-group {
+            margin-bottom: 25px;
+        }
+
+        .ingredient-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .ingredient-group h3 {
+            background: #f3f6ef;
+            border-radius: 10px;
+            padding: 9px 14px;
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .steps {
+            counter-reset: step;
+        }
+
+        .step {
+            position: relative;
+            padding: 16px 18px 16px 58px;
+            margin-bottom: 12px;
+            background: #faf9f6;
+            border-radius: 12px;
+        }
+
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 17px;
+            top: 16px;
+            width: 28px;
+            height: 28px;
+            background: #355b45;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .tip {
+            background: #fff8e9;
+            border: 1px solid #f0d49c;
+            border-radius: 14px;
+            padding: 18px 20px;
+        }
+
+        .source {
+            text-align: center;
+            background: #355b45;
+            color: white;
+        }
+
+        .source h2 {
+            color: white;
+            border-left-color: #e2ae5b;
+        }
+
+        .source a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 5px 20px 35px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            .hero {
+                padding: 50px 18px 55px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .info {
+                gap: 25px;
+                padding: 18px;
+            }
+
+            .card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <span class="tag">MASAKAN KHAS ACEH</span>
+        <h1>Kuah Pliek U</h1>
+        <p>
+            Hidangan khas Aceh dengan perpaduan pliek u, santan,
+            berbagai sayuran, rempah, dan udang.
+        </p>
+    </header>
+
+    <main class="container">
+
+        <section class="info">
+            <div class="info-item">
+                <strong>60 menit</strong>
+                <span>Waktu memasak</span>
+            </div>
+
+            <div class="info-item">
+                <strong>10 orang</strong>
+                <span>Porsi</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Tentang Resep</h2>
+            <p>
+                Kuah Pliek U merupakan salah satu masakan khas Aceh yang kaya
+                akan rempah dan sayuran. Hidangan ini menggunakan patarana
+                atau pliek u, santan, berbagai jenis sayuran, serta udang
+                sebagai bahan pelengkap.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Bahan-bahan</h2>
+
+            <div class="ingredient-group">
+                <h3>Bahan A</h3>
+                <ul>
+                    <li>25 gram cabe merah</li>
+                    <li>50 gram cabe rawit</li>
+                    <li>50 gram patarana, rendam dengan air hangat sebelum diblender</li>
+                    <li>10 siung bawang merah</li>
+                    <li>6 siung bawang putih</li>
+                    <li>3 ruas jari kunyit</li>
+                    <li>2 ruas jari jahe</li>
+                    <li>1/2 sdt jintan</li>
+                    <li>1/2 butir pala</li>
+                    <li>1 sdm ketumbar</li>
+                    <li>1 sdt merica</li>
+                    <li>2 1/2 butir kelapa, ambil santannya</li>
+                    <li>Penyedap rasa (saya tidak pakai)</li>
+                </ul>
+            </div>
+
+            <div class="ingredient-group">
+                <h3>Bahan B</h3>
+                <ul>
+                    <li>3 ruas jari kayu manis</li>
+                    <li>4 butir kapulaga</li>
+                    <li>2 biji bunga lawang</li>
+                    <li>3 batang serai, rajang tipis</li>
+                    <li>30 lembar daun jeruk, rajang tipis atau halus</li>
+                    <li>4 tangkai daun kari</li>
+                    <li>2 ruas lengkuas, geprek</li>
+                    <li>25 gram cabe hijau, potong kecil atau belah dua</li>
+                </ul>
+            </div>
+
+            <div class="ingredient-group">
+                <h3>Bahan C</h3>
+                <ul>
+                    <li>50 gram kacang panjang, potong pendek kira-kira satu ruas jari</li>
+                    <li>50 gram terong hijau, potong pendek mengikuti potongan kacang panjang</li>
+                    <li>100 gram melinjo muda</li>
+                    <li>100 gram daun melinjo, potong 2</li>
+                    <li>1/2 ikat pucuk pakis (jika suka)</li>
+                    <li>2 batang bunga atau batang kencong</li>
+                    <li>200 gram rebung bambu</li>
+                    <li>300 gram nangka muda, potong kecil (jika suka)</li>
+                    <li>200 gram bunga kates (jika suka)</li>
+                    <li>3 buah lejet / labu Jepang hijau, potong dadu kecil</li>
+                    <li>250 gram rimbang</li>
+                    <li>200 gram udang ukuran kecil</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Cara Membuat</h2>
+
+            <div class="steps">
+                <div class="step">
+                    Haluskan bahan A kecuali kelapa dan patarana.
+                </div>
+
+                <div class="step">
+                    Rendam patarana dengan air panas. Sisihkan dan biarkan
+                    patarana agak mengembang agar lebih cepat licin saat diblender.
+                </div>
+
+                <div class="step">
+                    Ambil pati santan pada perasan pertama, lalu sisihkan.
+                </div>
+
+                <div class="step">
+                    Perasan santan selanjutnya jangan terlalu encer.
+                </div>
+
+                <div class="step">
+                    Blender patarana sampai licin, lalu saring. Ulangi proses
+                    blender dan penyaringan beberapa kali hingga patarana habis.
+                </div>
+
+                <div class="step">
+                    Asingkan rebung dan melinjo, cuci bersih, lalu rebus dengan
+                    air kira-kira 2 1/2 koboan. Tunggu hingga agak empuk,
+                    kemudian matikan kompor.
+                </div>
+
+                <div class="step">
+                    Masukkan semua potongan sayuran lainnya ke dalam rebusan
+                    melinjo dan rebung.
+                </div>
+
+                <div class="step">
+                    Masukkan semua bahan B ke dalam sayuran. Tambahkan sedikit
+                    air, kira-kira 1 koboan, lalu aduk hingga semua bahan
+                    tercampur rata.
+                </div>
+
+                <div class="step">
+                    Masak di atas api sedang sambil diaduk. Tunggu hingga
+                    mendidih dan sayuran mulai layu, lalu tambahkan sedikit
+                    santan encer. Aduk agar santan tidak menggumpal.
+                </div>
+
+                <div class="step">
+                    Jika santan mulai menyusut, tambahkan lagi santan encer.
+                    Tunggu hingga mendidih, lalu tambahkan pati santan dan udang.
+                    Tambahkan garam sesuai selera.
+                </div>
+
+                <div class="step">
+                    Beri penyedap jika diinginkan.
+                </div>
+
+                <div class="step">
+                    Aduk terus hingga sayuran empuk dan matang.
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Tips</h2>
+
+            <div class="tip">
+                <ul>
+                    <li>Rendam patarana terlebih dahulu agar lebih mudah diblender.</li>
+                    <li>Saring patarana setelah diblender agar teksturnya lebih halus.</li>
+                    <li>Aduk santan secara perlahan agar tidak menggumpal.</li>
+                    <li>Penyedap rasa dapat digunakan sesuai selera atau tidak digunakan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card source">
+            <h2>Sumber Resep</h2>
+            <p>
+                Resep diadaptasi dari Cookpad:
+                <a href="https://cookpad.com/id/resep/15545070" target="_blank">
+                    Resep Kuah Pliek U
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Selamat mencoba! 🌿</p>
+    </footer>
+
+</body>
+</html>
